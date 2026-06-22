@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>구글 공인 교육 전문가 레벨 1 합격 집중반 | 더마크월드 AI강사단</title>
+  <meta name="description" content="더마크월드 AI강사단 코치님을 위한 구글 공인 교육 전문가 레벨 1 합격 집중반. 더마크월드 사무실에서 진행됩니다.">
+  <meta property="og:title" content="구글 공인 교육 전문가 레벨 1 합격 집중반">
+  <meta property="og:description" content="더마크월드 AI강사단 대상, 전원합격을 목표로 운영하는 레벨 1 집중반입니다.">
+  <meta property="og:image" content="assets/level1-course.png">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --ink: #112039;
+      --muted: #586579;
+      --line: #dbe5f4;
+      --blue: #1464e9;
+      --blue-deep: #083c9e;
+      --mint: #20c997;
+      --amber: #f5a623;
+      --rose: #f05b6f;
+      --paper: #ffffff;
+      --soft: #f5f8fc;
+      --soft-mint: #edf9f5;
+      --shadow: 0 24px 60px rgba(13, 43, 91, .14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.55;
+      word-break: keep-all;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 20;
+      padding: 10px 14px;
+      border-radius: 6px;
+      background: var(--ink);
+      color: white;
+      transition: top .2s ease;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(219, 229, 244, .72);
+      background: rgba(255, 255, 255, .88);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      width: min(1120px, calc(100% - 32px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      color: var(--blue-deep);
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+
+    .brand-name {
+      max-width: 320px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 0 20px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--blue);
+      color: white;
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 14px 28px rgba(20, 100, 233, .24);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .nav-cta {
+      min-height: 42px;
+      padding: 0 16px;
+      font-size: 14px;
+    }
+
+    .button:hover,
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      background: var(--blue-deep);
+      box-shadow: 0 18px 34px rgba(20, 100, 233, .30);
+    }
+
+    .button.secondary {
+      background: white;
+      color: var(--blue-deep);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .button.secondary:hover {
+      background: var(--soft);
+      box-shadow: 0 12px 26px rgba(17, 32, 57, .08);
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      align-items: center;
+      padding: 112px 0 56px;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, .96) 0%, rgba(255, 255, 255, .84) 45%, rgba(255, 255, 255, .24) 100%),
+        url("assets/level1-course.png") right center / contain no-repeat,
+        linear-gradient(180deg, #ffffff 0%, #eef6ff 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      color: var(--blue-deep);
+      font-weight: 900;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--mint);
+      box-shadow: 16px 0 0 var(--amber), 32px 0 0 var(--rose);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin-bottom: 22px;
+      font-size: clamp(42px, 8vw, 86px);
+      line-height: 1.06;
+      letter-spacing: 0;
+      color: #08245f;
+    }
+
+    .hero-copy {
+      max-width: 600px;
+      margin-bottom: 28px;
+      color: #28364c;
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .trust-row li {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .78);
+    }
+
+    section {
+      padding: 84px 0;
+    }
+
+    .section-inner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-kicker {
+      margin-bottom: 10px;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 18px;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .section-lead {
+      max-width: 760px;
+      margin-bottom: 36px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .problem {
+      background: var(--soft);
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      padding: 26px;
+      box-shadow: 0 16px 40px rgba(17, 32, 57, .06);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+      line-height: 1.28;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: #eaf2ff;
+      color: var(--blue);
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    .icon.mint {
+      background: var(--soft-mint);
+      color: #0d8f6b;
+    }
+
+    .icon.amber {
+      background: #fff6e5;
+      color: #b66d00;
+    }
+
+    .solution {
+      background:
+        linear-gradient(180deg, white 0%, #f9fbfe 100%);
+    }
+
+    .schedule-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .schedule-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .schedule-list li {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 14px 34px rgba(17, 32, 57, .07);
+    }
+
+    .check {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--blue);
+      color: white;
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .schedule-date {
+      display: block;
+      color: var(--ink);
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.22;
+    }
+
+    .schedule-note {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .notice-panel {
+      border-radius: 8px;
+      padding: 30px;
+      background: #10224a;
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .notice-panel h3 {
+      margin-bottom: 12px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    .notice-panel p {
+      margin-bottom: 18px;
+      color: rgba(255, 255, 255, .78);
+    }
+
+    .notice-panel .mini-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-weight: 800;
+    }
+
+    .mini-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .mini-list li::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 9px;
+      height: 9px;
+      margin-top: 8px;
+      border-radius: 50%;
+      background: var(--mint);
+    }
+
+    .features {
+      background: white;
+    }
+
+    .payment {
+      background: #f7fbff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .payment-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 430px) minmax(0, 1fr);
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .payment-copy {
+      padding: 30px;
+      border-radius: 8px;
+      background: #112039;
+      color: white;
+    }
+
+    .payment-copy h2 {
+      margin-bottom: 14px;
+      font-size: 34px;
+      line-height: 1.22;
+    }
+
+    .payment-copy p {
+      color: rgba(255, 255, 255, .78);
+    }
+
+    .pay-frame-wrap {
+      min-height: 620px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .pay-frame {
+      width: 100%;
+      height: 620px;
+      border: 0;
+      display: block;
+      background: white;
+    }
+
+    .pay-fallback {
+      padding: 14px 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      background: white;
+    }
+
+    .final-cta {
+      padding: 78px 0;
+      background:
+        linear-gradient(135deg, #0c2d72 0%, #1464e9 58%, #17a884 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .final-cta .section-inner {
+      max-width: 820px;
+    }
+
+    .final-cta h2 {
+      margin-bottom: 16px;
+      font-size: clamp(30px, 5vw, 52px);
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    .final-cta p {
+      margin: 0 auto 28px;
+      max-width: 640px;
+      color: rgba(255, 255, 255, .84);
+      font-size: 18px;
+    }
+
+    .final-cta .button {
+      background: white;
+      color: var(--blue-deep);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, .18);
+    }
+
+    .footer {
+      padding: 28px 0;
+      background: #071832;
+      color: rgba(255, 255, 255, .72);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        min-height: 62px;
+      }
+
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .hero {
+        min-height: 84vh;
+        padding: 94px 0 44px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .92) 44%, rgba(255, 255, 255, .62) 100%),
+          url("assets/level1-course.png") center bottom 20px / min(88vw, 520px) no-repeat,
+          linear-gradient(180deg, #ffffff 0%, #eef6ff 100%);
+        align-items: start;
+      }
+
+      h1 {
+        max-width: 620px;
+        font-size: clamp(40px, 10vw, 64px);
+      }
+
+      .hero-copy {
+        max-width: 520px;
+        font-size: 18px;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .grid.three,
+      .grid.two,
+      .schedule-wrap,
+      .payment-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .payment-copy {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .brand-name {
+        max-width: 178px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .brand-logo {
+        width: 36px;
+        height: 36px;
+      }
+
+      .nav {
+        width: min(100% - 24px, 1120px);
+      }
+
+      .nav-cta {
+        padding: 0 12px;
+      }
+
+      .hero-inner,
+      .section-inner,
+      .footer-inner {
+        width: min(100% - 24px, 1120px);
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding-top: 88px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, .99) 0%, rgba(255, 255, 255, .94) 52%, rgba(255, 255, 255, .68) 100%),
+          url("assets/level1-course.png") center bottom 14px / min(96vw, 420px) no-repeat,
+          linear-gradient(180deg, #ffffff 0%, #eef6ff 100%);
+      }
+
+      .eyebrow {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 12vw, 48px);
+      }
+
+      .hero-copy {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .hero-actions,
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .trust-row {
+        display: none;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .section-lead {
+        font-size: 16px;
+      }
+
+      .card,
+      .notice-panel,
+      .payment-copy {
+        padding: 22px;
+      }
+
+      .schedule-list li {
+        grid-template-columns: 42px 1fr;
+        padding: 15px;
+      }
+
+      .check {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+      }
+
+      .schedule-date {
+        font-size: 20px;
+      }
+
+      .pay-frame-wrap,
+      .pay-frame {
+        min-height: 560px;
+        height: 560px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#payment">결제 영역으로 이동</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="brand" href="#top" aria-label="더마크월드 AI강사단 홈">
+        <img class="brand-logo" src="assets/themarkworld-logo.png" alt="더마크월드 로고">
+        <span class="brand-name">더마크월드 AI강사단</span>
+      </a>
+      <div class="nav-links">
+        <a href="#schedule">일정·장소</a>
+        <a href="#features">과정 안내</a>
+        <a class="nav-cta" href="#payment">신청하기</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <p class="eyebrow">더마크월드 AI강사단 대상</p>
+        <h1 id="hero-title">구글 공인 교육 전문가 레벨 1 합격 집중반</h1>
+        <p class="hero-copy">
+          Google for Education 수업 운영 역량을 정리하고, 더마크월드 사무실에서 시험 준비 흐름까지 한 번에 잡는 소수 개설 과정입니다.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#payment">과정 신청 및 결제</a>
+          <a class="button secondary" href="#schedule">일정·장소 먼저 보기</a>
+        </div>
+        <ul class="trust-row" aria-label="과정 핵심 정보">
+          <li>3인 이상 신청 시 오픈</li>
+          <li>전원합격 목표</li>
+          <li>더마크월드 사무실 현장 진행</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="problem" aria-labelledby="problem-title">
+      <div class="section-inner">
+        <p class="section-kicker">Problem</p>
+        <h2 class="section-title" id="problem-title">강의 경험은 충분한데, 인증 시험 준비는 따로 시간이 필요합니다.</h2>
+        <p class="section-lead">
+          더마크월드 AI강사단으로 활동하다 보면 수업 설계와 도구 활용은 익숙해도, 구글 공인 교육 전문가 시험은 출제 범위와 준비 순서를 따로 잡아야 합니다.
+        </p>
+        <div class="grid three">
+          <article class="card">
+            <div class="icon" aria-hidden="true">1</div>
+            <h3>무엇부터 봐야 할지 흐립니다</h3>
+            <p>Google Workspace 도구가 넓어서 핵심 학습 범위를 좁히기 어렵습니다.</p>
+          </article>
+          <article class="card">
+            <div class="icon amber" aria-hidden="true">2</div>
+            <h3>강의 일정 사이에 준비가 밀립니다</h3>
+            <p>혼자 준비하면 우선순위가 밀리고, 시험 직전까지 감으로 버티게 됩니다.</p>
+          </article>
+          <article class="card">
+            <div class="icon mint" aria-hidden="true">3</div>
+            <h3>실전 기준을 확인하기 어렵습니다</h3>
+            <p>단순 기능 학습이 아니라 교육 현장 적용 방식까지 정리해야 자신감이 생깁니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution" id="schedule" aria-labelledby="schedule-title">
+      <div class="section-inner schedule-wrap">
+        <div>
+          <p class="section-kicker">Schedule & Venue</p>
+          <h2 class="section-title" id="schedule-title">정해진 시간에 모여, 합격까지 필요한 준비를 압축합니다.</h2>
+          <p class="section-lead">
+            개설 예정 일정 중 가능한 회차를 선택해 신청해 주세요. 과정은 더마크월드 사무실에서 현장 진행되며, 신청 인원이 3명 이상이면 오픈됩니다.
+          </p>
+          <ul class="schedule-list">
+            <li>
+              <span class="check" aria-hidden="true">✓</span>
+              <span>
+                <strong class="schedule-date">6/29(월) 10:00~15:00</strong>
+                <span class="schedule-note">평일 오전 집중 회차 · 더마크월드 사무실</span>
+              </span>
+            </li>
+            <li>
+              <span class="check" aria-hidden="true">✓</span>
+              <span>
+                <strong class="schedule-date">7/1(수) 10:00~15:00</strong>
+                <span class="schedule-note">평일 중간 점검 회차 · 더마크월드 사무실</span>
+              </span>
+            </li>
+            <li>
+              <span class="check" aria-hidden="true">✓</span>
+              <span>
+                <strong class="schedule-date">7/5(일) 14:00~18:00</strong>
+                <span class="schedule-note">주말 오후 집중 회차 · 더마크월드 사무실</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <aside class="notice-panel" aria-label="과정 운영 안내">
+          <h3>3인 이상 신청 시 오픈</h3>
+          <p>소수 인원으로 운영해 질문과 실습 흐름을 놓치지 않도록 진행합니다.</p>
+          <ul class="mini-list">
+            <li>더마크월드 AI강사단 대상</li>
+            <li>Google for Education 레벨 1 대비</li>
+            <li>더마크월드 사무실 현장 진행</li>
+            <li>서울시 서초구 강남대로 455 강남태영데시앙루브 A동 1005호</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="section-inner">
+        <p class="section-kicker">Program</p>
+        <h2 class="section-title" id="features-title">시험 준비를 강의자 관점으로 다시 정리합니다.</h2>
+        <p class="section-lead">
+          이 과정은 단순 기능 나열보다, 교육 현장에서 바로 설명하고 적용할 수 있는 기준을 잡는 데 초점을 둡니다.
+        </p>
+        <div class="grid three">
+          <article class="card">
+            <div class="icon" aria-hidden="true">G</div>
+            <h3>구글 도구 핵심 정리</h3>
+            <p>Classroom, Drive, Docs, Forms 등 시험에 필요한 흐름을 빠르게 정리합니다.</p>
+          </article>
+          <article class="card">
+            <div class="icon mint" aria-hidden="true">Q</div>
+            <h3>실전형 점검</h3>
+            <p>교육 상황에서 어떤 도구를 왜 쓰는지 설명할 수 있게 준비합니다.</p>
+          </article>
+          <article class="card">
+            <div class="icon amber" aria-hidden="true">A</div>
+            <h3>합격 루틴 설계</h3>
+            <p>남은 준비 시간에 맞춰 복습 순서와 시험 전 체크포인트를 잡습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment" id="payment" aria-labelledby="payment-title">
+      <div class="section-inner payment-shell">
+        <div class="payment-copy">
+          <p class="section-kicker">Apply</p>
+          <h2 id="payment-title">신청과 결제를 한 번에 진행하세요.</h2>
+          <p>
+            아래 결제창에서 신청을 완료하면 과정 개설 인원 집계에 반영됩니다. 교육 장소는 더마크월드 사무실, 서울시 서초구 강남대로 455 강남태영데시앙루브 A동 1005호입니다.
+          </p>
+          <a class="button" href="https://www.payapp.kr/L/z4fWW5" target="_blank" rel="noopener">페이앱 새 창으로 결제</a>
+        </div>
+        <div class="pay-frame-wrap">
+          <iframe
+            class="pay-frame"
+            title="페이앱 결제창"
+            src="https://www.payapp.kr/L/z4fWW5"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="pay-fallback">
+            보안 정책으로 결제창이 열리지 않는 경우
+            <a href="https://www.payapp.kr/L/z4fWW5" target="_blank" rel="noopener"><strong>페이앱 결제 페이지</strong></a>를 새 창으로 열어주세요.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <div class="section-inner">
+        <h2 id="final-title">이번 회차에서 레벨 1 준비를 끝내세요.</h2>
+        <p>더마크월드 AI강사단 코치님들과 함께 핵심만 압축해서 정리하고, 시험 전 마지막 점검까지 이어갑니다.</p>
+        <a class="button" href="https://www.payapp.kr/L/z4fWW5" target="_blank" rel="noopener">지금 신청하기</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>더마크월드 | 서울시 서초구 강남대로 455 강남태영데시앙루브 A동 1005호</span>
+      <a href="https://www.payapp.kr/L/z4fWW5" target="_blank" rel="noopener">결제 링크</a>
+    </div>
+  </footer>
+</body>
+</html>
