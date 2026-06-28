@@ -191,7 +191,7 @@
       padding: 112px 0 58px;
       overflow: hidden;
       border-bottom: 1px solid var(--line);
-      background: #09182d;
+      background: var(--paper);
     }
 
     .hero::before {
@@ -200,17 +200,17 @@
       inset: 0;
       z-index: -2;
       background:
-        linear-gradient(90deg, rgba(7, 24, 50, .96) 0%, rgba(7, 24, 50, .83) 42%, rgba(7, 24, 50, .36) 100%),
-        url("assets/instructor-seongmi.png") right center / cover no-repeat;
+        linear-gradient(90deg, rgba(255, 250, 244, .98) 0%, rgba(255, 250, 244, .96) 36%, rgba(255, 250, 244, .52) 58%, rgba(255, 250, 244, .06) 100%),
+        url("assets/hero-clean.png") right bottom / auto 100% no-repeat;
     }
 
     .hero::after {
       content: "";
       position: absolute;
       inset: auto 0 0;
-      height: 34%;
+      height: 22%;
       z-index: -1;
-      background: linear-gradient(0deg, rgba(9, 24, 45, .82), rgba(9, 24, 45, 0));
+      background: linear-gradient(0deg, rgba(255, 250, 244, .9), rgba(255, 250, 244, 0));
     }
 
     .hero-inner,
@@ -225,7 +225,7 @@
       align-items: center;
       gap: 10px;
       margin: 0 0 18px;
-      color: #9df4e9;
+      color: #0f8f83;
       font-weight: 900;
     }
 
@@ -247,7 +247,7 @@
     h1 {
       max-width: 760px;
       margin-bottom: 20px;
-      color: white;
+      color: var(--navy);
       font-size: clamp(42px, 7vw, 82px);
       line-height: 1.06;
       letter-spacing: 0;
@@ -256,7 +256,7 @@
     .hero-copy {
       max-width: 660px;
       margin-bottom: 26px;
-      color: rgba(255, 255, 255, .88);
+      color: #344054;
       font-size: clamp(17px, 2vw, 22px);
       font-weight: 700;
     }
@@ -276,16 +276,16 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      color: rgba(255, 255, 255, .9);
+      color: var(--navy);
       font-size: 14px;
       font-weight: 800;
     }
 
     .quick-facts li {
       padding: 8px 12px;
-      border: 1px solid rgba(255, 255, 255, .22);
+      border: 1px solid rgba(8, 43, 97, .14);
       border-radius: 999px;
-      background: rgba(255, 255, 255, .09);
+      background: rgba(255, 255, 255, .74);
       backdrop-filter: blur(10px);
     }
 
@@ -812,8 +812,8 @@
 
       .hero::before {
         background:
-          linear-gradient(180deg, rgba(7, 24, 50, .96) 0%, rgba(7, 24, 50, .82) 44%, rgba(7, 24, 50, .46) 100%),
-          url("assets/instructor-seongmi.png") center center / cover no-repeat;
+          linear-gradient(180deg, rgba(255, 250, 244, .98) 0%, rgba(255, 250, 244, .9) 48%, rgba(255, 250, 244, .45) 100%),
+          url("assets/hero-clean.png") center bottom / auto 82% no-repeat;
       }
 
       .grid.three,
@@ -856,8 +856,8 @@
 
       .hero::before {
         background:
-          linear-gradient(180deg, rgba(7, 24, 50, .98) 0%, rgba(7, 24, 50, .9) 54%, rgba(7, 24, 50, .6) 100%),
-          url("assets/instructor-seongmi.png") center center / cover no-repeat;
+          linear-gradient(180deg, rgba(255, 250, 244, .99) 0%, rgba(255, 250, 244, .94) 54%, rgba(255, 250, 244, .58) 100%),
+          url("assets/hero-clean.png") center bottom / auto 68% no-repeat;
       }
 
       h1 {
@@ -928,7 +928,7 @@
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
-        <p class="eyebrow">7월 개강 · 전자책 무료출간 등록 완료 과정</p>
+        <p class="eyebrow">7월 개강 · 전자책 하루 완성 과정</p>
         <h1 id="hero-title">원데이 전자책쓰기</h1>
         <p class="hero-copy">
           아이디어만 가져오세요. 하루 동안 전자책 기획, 집필, 북커버, 무료출간 등록까지 끝내고 헤어집니다.
